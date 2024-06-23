@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #70c5ce;
+}
+
+#game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    display: block;
+    background-color: #70c5ce;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+#gameOverScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#gameOverBox {
+    background: linear-gradient(to right, #a4508b, #5f0a87); /* Purple gradient */
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#finalScore {
+    background: linear-gradient(to right, #a4508b, #5f0a87);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#playAgainButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #a4508b, #5f0a87); /* Same gradient as finalScore */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
