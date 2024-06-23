@@ -6,16 +6,18 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #70c5ce;
+    background-image: url('background.jpg'); /* Add your custom background image here */
+    background-size: cover; /* Ensures the background image covers the entire screen */
 }
 
+/* The rest of your existing CSS styles */
 #game-container {
     position: relative;
 }
 
 #gameCanvas {
     display: block;
-    background-color: #70c5ce;
+    background-color: transparent; /* Make canvas background transparent */
 }
 
 #score {
@@ -33,7 +35,7 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
     color: white;
     display: flex;
     flex-direction: column;
@@ -43,7 +45,7 @@ body, html {
 }
 
 #gameOverBox {
-    background: linear-gradient(to right, #a4508b, #5f0a87); /* Purple gradient */
+    background: linear-gradient(to right, #a4508b, #5f0a87);
     padding: 20px 40px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -60,7 +62,7 @@ body, html {
 #playAgainButton {
     margin-top: 20px;
     padding: 10px 20px;
-    background: linear-gradient(to right, #a4508b, #5f0a87); /* Same gradient as finalScore */
+    background: linear-gradient(to right, #a4508b, #5f0a87);
     color: white;
     border: none;
     border-radius: 15px;
