@@ -11,11 +11,17 @@ canvas.height = window.innerHeight;
 const birdImage = new Image();
 birdImage.src = 'redbird-midflap.png'; // Replace with your custom bird image file path
 
+const pipeTopImage = new Image();
+pipeTopImage.src = 'pipetop.png'; // Replace with your custom top pipe image file path
+
+const pipeBottomImage = new Image();
+pipeBottomImage.src = 'pipebottom.png'; // Replace with your custom bottom pipe image file path
+
 const bird = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    width: 34, // Adjust size of custom bird as needed
-    height: 24,
+    width: 50, // Adjust width to match custom bird image
+    height: 40, // Adjust height to match custom bird image
     gravity: 0.1,
     lift: -4.5,
     velocity: 0,
@@ -98,10 +104,9 @@ function update() {
             endGame();
         }
 
-        // Draw pipes
-        ctx.fillStyle = 'green';
-        ctx.fillRect(pipe.x, 0, pipeWidth, pipe.topHeight);
-        ctx.fillRect(pipe.x, canvas.height - pipe.bottomHeight, pipeWidth, pipe.bottomHeight);
+        // Draw custom pipes
+        ctx.drawImage(pipeTopImage, pipe.x, 0, pipeWidth, pipe.topHeight);
+        ctx.drawImage(pipeBottomImage, pipe.x, canvas.height - pipe.bottomHeight, pipeWidth, pipe.bottomHeight);
     });
 
     // Draw custom bird image
