@@ -9,13 +9,13 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const birdImage = new Image();
-birdImage.src = 'file.png'; // Replace with your custom bird image file path
+birdImage.src = 'redbird-midflap.png'; // Replace with your custom bird image file path
 
 const bird = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    width: 940, // Adjust size of custom bird as needed
-    height: 433,
+    width: 34, // Adjust size of custom bird as needed
+    height: 24,
     gravity: 0.1,
     lift: -4.5,
     velocity: 0,
