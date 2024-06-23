@@ -9,7 +9,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const birdImage = new Image();
-birdImage.src = 'bird.png'; // Replace with your custom bird image file path
+birdImage.src = 'file.png'; // Replace with your custom bird image file path
 
 const bird = {
     x: canvas.width / 2,
