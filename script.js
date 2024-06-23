@@ -14,8 +14,8 @@ birdImage.src = 'file.png'; // Replace with your custom bird image file path
 const bird = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    width: 20,
-    height: 20,
+    width: 40, // Adjust size of custom bird as needed
+    height: 30,
     gravity: 0.1,
     lift: -4.5,
     velocity: 0,
@@ -98,12 +98,13 @@ function update() {
             endGame();
         }
 
+        // Draw pipes
         ctx.fillStyle = 'green';
         ctx.fillRect(pipe.x, 0, pipeWidth, pipe.topHeight);
         ctx.fillRect(pipe.x, canvas.height - pipe.bottomHeight, pipeWidth, pipe.bottomHeight);
     });
 
-    // Draw custom bird image instead of yellow square
+    // Draw custom bird image
     ctx.drawImage(birdImage, bird.x, bird.y, bird.width, bird.height);
 
     frameCount++;
