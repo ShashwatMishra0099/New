@@ -8,6 +8,9 @@ const playAgainButton = document.getElementById('playAgainButton');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+const birdImage = new Image();
+birdImage.src = 'bird.png'; // Replace with your custom bird image file path
+
 const bird = {
     x: canvas.width / 2,
     y: canvas.height / 2,
@@ -100,8 +103,8 @@ function update() {
         ctx.fillRect(pipe.x, canvas.height - pipe.bottomHeight, pipeWidth, pipe.bottomHeight);
     });
 
-    ctx.fillStyle = 'yellow';
-    ctx.fillRect(bird.x, bird.y, bird.width, bird.height);
+    // Draw custom bird image instead of yellow square
+    ctx.drawImage(birdImage, bird.x, bird.y, bird.width, bird.height);
 
     frameCount++;
     if (!gameOver) {
