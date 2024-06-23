@@ -10,7 +10,6 @@ body, html {
     background-size: cover; /* Ensures the background image covers the entire screen */
 }
 
-/* The rest of your existing CSS styles */
 #game-container {
     position: relative;
 }
