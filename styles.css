@@ -34,7 +34,7 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: black; /* Set background color to full black */
     color: white;
     display: flex;
     flex-direction: column;
@@ -67,4 +67,4 @@ body, html {
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-}
+} 
