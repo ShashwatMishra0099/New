@@ -28,7 +28,7 @@ const bird = {
 };
 
 let pipes = [];
-const pipeWidth = 50;
+const pipeWidth = 80;
 const pipeGap = 200;
 let frameCount = 0;
 let score = 0;
