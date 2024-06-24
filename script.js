@@ -9,7 +9,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const birdImage = new Image();
-birdImage.src = 'Birdblue.png'; // Replace with your custom bird image file path
+birdImage.src = 'redflappy.png'; // Replace with your custom bird image file path
 
 const pipeTopImage = new Image();
 pipeTopImage.src = 'pipetop.png'; // Replace with your custom top pipe image file path
