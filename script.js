@@ -15,7 +15,7 @@ const pipeTopImage = new Image();
 pipeTopImage.src = 'toppipes.png'; // Replace with your custom top pipe image file path
 
 const pipeBottomImage = new Image();
-pipeBottomImage.src = 'pipebottom.png'; // Replace with your custom bottom pipe image file path
+pipeBottomImage.src = 'bottompipes.png'; // Replace with your custom bottom pipe image file path
 
 const bird = {
     x: canvas.width / 2,
