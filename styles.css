@@ -6,7 +6,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url('background.jpg'); /* Add your custom background image here */
+    background-image: url('background1.jpg'); /* Add your custom background image here */
     background-size: cover; /* Ensures the background image covers the entire screen */
 }
 
